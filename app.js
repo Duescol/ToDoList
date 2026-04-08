@@ -21,7 +21,10 @@ function CriaTarefa() {
     Itext.classList.add("tarefa-input")
 
     Bdel.addEventListener("click", function () { item.remove() })
-    Bdon.addEventListener("click", function () { Itext.classList.toggle("btn-icon-done") })
+    Bdon.addEventListener("click", function () {
+        Itext.classList.toggle("btn-icon-done")
+        Itext.readOnly = Itext.classList.contains("btn-icon-done")
+    })
 
 
     item.appendChild(Bdon)
@@ -30,5 +33,4 @@ function CriaTarefa() {
     D_tarefas.appendChild(item)
 
 }
-
 B_add.addEventListener("click", CriaTarefa)
