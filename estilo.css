@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 2rem;
+}
+
+#tarefas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+#tarefas li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.tarefa-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
+.tarefa-input::placeholder {
+    color: #666;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #e0e0e0;
+}
+
+.btn-icon-done {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: line-through;
+    text-decoration-color: mediumspringgreen;
+    text-decoration-thickness: 2px;
+    color: gray;
+}
+
+.btn-icon:hover {
+    background-color: #3a3a3a;
+}
+
+#add {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px dashed #555;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #888;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+#add:hover {
+    background-color: #2a2a2a;
+}
